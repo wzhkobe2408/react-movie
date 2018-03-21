@@ -1,0 +1,11 @@
+.card-content {
+  height:240px;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.card-content img {
+  width: 100%;
+}
+.horizontal {
+  background: #1F1F1F;
+}
