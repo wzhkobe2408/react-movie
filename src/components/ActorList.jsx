@@ -4,27 +4,15 @@ import './ActionList.css'
 
 class ActionList extends Component {
   render() {
+    console.log(this.props.data)
     return (
       <div className="container">
         <Row>
-          <Col m={2} s={3}>
-            <img className="responsive" src="https://images.unsplash.com/photo-1508256912445-74f4409bbfde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f302e7dd05f624e96197416fb36ad246&auto=format&fit=crop&w=751&q=80g" alt="actor"/>
-          </Col>
-          <Col m={2} s={3}>
-            <img className="responsive"  src="https://images.unsplash.com/photo-1508256912445-74f4409bbfde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f302e7dd05f624e96197416fb36ad246&auto=format&fit=crop&w=751&q=80g" alt="actor"/>
-          </Col>
-          <Col m={2} s={3}>
-            <img  className="responsive" src="https://images.unsplash.com/photo-1508256912445-74f4409bbfde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f302e7dd05f624e96197416fb36ad246&auto=format&fit=crop&w=751&q=80g" alt="actor"/>
-          </Col>
-          <Col m={2} s={3}>
-            <img className="responsive" src="https://images.unsplash.com/photo-1508256912445-74f4409bbfde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f302e7dd05f624e96197416fb36ad246&auto=format&fit=crop&w=751&q=80g" alt="actor"/>
-          </Col>
-          <Col m={2} s={3}>
-            <img className="responsive" src="https://images.unsplash.com/photo-1508256912445-74f4409bbfde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f302e7dd05f624e96197416fb36ad246&auto=format&fit=crop&w=751&q=80g" alt="actor"/>
-          </Col>
-          <Col m={2} s={3}>
-            <img className="responsive" src="https://images.unsplash.com/photo-1508256912445-74f4409bbfde?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f302e7dd05f624e96197416fb36ad246&auto=format&fit=crop&w=751&q=80g" alt="actor"/>
-          </Col>
+          {/* {this.props.data.credits.cast.map((item, index) => (
+            <Col key={index} m={2} s={3}>
+              <img className="responsive" src={`https://image.tmdb.org/t/p/w300${item.profile_path}`} alt="actor"/>
+            </Col>  
+          ))} */}
         </Row>
       </div>
     )

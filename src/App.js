@@ -14,7 +14,7 @@ class App extends Component {
           <Header />
           <SearchField />
             <Route exact path="/" component={Home} />
-            <Route path="/detail" component={Detail} />
+            <Route path="/detail/:id" component={Detail} />
           <Footer />
         </div>
       </Router>
